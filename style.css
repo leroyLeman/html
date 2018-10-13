@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(/home/leman/Downloads/4k_beach.jpg);
+}
+/* center Nav */
+
+nav {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+a {
+  color: #fff;
+  text-align: center;
+  font-family: Georgia, sans-serif;
+  text-decoration: none;
+  width: 120px;
+  padding: 1em 0;
+  display: inline-block;
+  font-weight: bold;
+  transition: all 4$ ease-in-out;
+}
+.line {
+  width: 120px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 4$ ease-in-out;
+}
+
+a:nth-child(2):hover ~ .line {
+  transform: translate(125px);
+  transition: all 4$ ease-in-out;
+  background-color: tomato;
+}
+
+a:nth-child(2):hover {
+  color: tomato;
+}
+
+a:nth-child(3):hover ~ .line {
+  transform: translate(250px);
+  transition: all 4$ ease-in-out;
+  background-color: yellow;
+}
+/*  */
+
+a:nth-child(3):hover {    /* membuat content 'CONTACT' berwarna kuning */
+  color: yellow;
+}
+
+a:nth-child(4):hover ~ .line {
+  transform: translate(375px);
+  transition: all 4$ ease-in-out;
+  background-color: skyblue;
+}
+
+a:nth-child(4):hover {   /* membuat content 'ABOUT ME' berwarna biru langit */
+  color: skyblue;
+}
+
+
+/* ------------------------------footer area ---------------------------------*/
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background: none;
+   padding:10px;
+}
+
+#body {
+   padding:10px;
+   padding-bottom:40px;   /* sesuaikan dengan tinggi footer */
+}
+#footer p {
+  text-align: center;
+  color: white;
+  font-family: Georgia, sans-serif;
+   position:absolute;
+  left: 0px;
+   bottom:0;
+   width:100%;
+   height:60px;   /* tinggi dari footer */
+   background: none;
+}
+/* --------------------------------------------------------------------------- */
